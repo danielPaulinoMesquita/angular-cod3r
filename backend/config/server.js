@@ -1,27 +1,18 @@
 const port = 3003
 
 const bodyParser = require('body-parser')
-const express= require('express')
+const express = require('express')
 const server = express()
-const allowCors= require('./cors')
+const allowCors = require('./cors')
+const queryParser = require('express-query-int')
 
-server.use(bodyParser.urlencoded({extended:true}))
+server.use(bodyParser.urlencoded({ extended: true }))
 server.use(bodyParser.json())
 server.use(allowCors)
+server.use(queryParser())
 
-server.listen(port, function(){
-    console.log(`BACKEND is running on port ${port}.`)
+server.listen(port, function() {
+  console.log(`BACKEND is running on port ${port}.`)
 })
 
-module.exports=server
-
-/*server.use(function(req,res,next){                           
------------- CONCEITO DE MIDLEWARE DO EXPRESS next() ---------
-    console.log('midleware 1')
-    next()
-})
-
-server.use(function(req,res,next){
-    res.send('Funcionou o outro midlew')
-    console.log('midlewware 2')
-})*/
+module.exports = server

@@ -4,22 +4,22 @@
   "description": "",
   "main": "loader.js",
   "scripts": {
-    "dev":"nodemon",
-      "production": "pm2 start loader.js --name backend"
+    "dev": "nodemon",
+    "production": "pm2 start loader.js --name backend"
   },
-  "author": "Daniel Paulino",
+  "author": "Leonardo Leitão",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.3",
-    "express-query-int": "^3.0.0",
-    "lodash": "^4.17.10",
-    "mongoose": "^5.2.14",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-query-int": "^1.0.1",
+    "lodash": "^4.17.2",
+    "mongoose": "^4.7.0",
     "mongoose-paginate": "^5.0.3",
-    "node-restful": "^0.2.6",
-    "pm2": "^3.1.2"
+    "node-restful": "^0.2.5",
+    "pm2": "^2.1.5"
   },
   "devDependencies": {
-    "nodemon": "^1.18.4"
+    "nodemon": "^1.11.0"
   }
 }
