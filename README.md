@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Mongo, Express, Angular e Node - Primeira Aplicação do ZERO!
 
 ## Sobre o Curso
@@ -36,3 +37,7 @@ Foram aplicadas seis tags no master:
 4. **exercicios_angular** - tag com todos os exercícios do angular concluídos
 5. **backend** - tag com o backend concluído
 6. **frontend** - tag com o frontend concluído
+=======
+# angular-cod3r
+Angular, Express, Gulp, Mongo e Node
+>>>>>>> 87294055315cab920ccbcfe71ff58a4920cd9d94
